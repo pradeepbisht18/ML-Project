@@ -10,8 +10,8 @@ from pandas.plotting import scatter_matrix
 sns.set(color_codes=True)
 #Loading the data from the excel sheet
 
-xl = pd.ExcelFile("university data.xlsx")
-df = xl.parse("university_data")
+xl = pd.ExcelFile("dataSheet.xlsx")
+df = xl.parse("dataSheet")
 df.drop(['rank', 'name', 'Grad Student No.', 'TT Faculty', 'Lecturers', 'G-TT Ratio', 'G-TTL Ratio'], axis=1, inplace=True)
 
 df_na = df.dropna()
